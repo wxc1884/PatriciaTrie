@@ -278,7 +278,7 @@ public class PatriciaTrie<T> {
             } else {
                 if (childNode.isEol()) {
                     List<NodeItem<T>> preNodeItems1 = new ArrayList<>();
-                    String value = stringArrToString(sequence).substring(i);
+                    String value = stringArrToString(sequence).substring(i + 1 - step);
                     childNode.getNodeValues().forEach(nodeValue -> {
                         T copyNodeValue;
                         try {
